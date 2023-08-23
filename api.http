@@ -19,4 +19,7 @@ Content-Type: application/json
 ### Map Stuff
 
 ### Get place_id
-GET http://localhost:3000/places?text=maestro cardim, bela vista, 1218
+GET http://localhost:3000/places?text=masp
+
+### Get directions between 2 places
+GET http://localhost:3000/directions?originId=ChIJQzIBkJdZzpQRbZf6LAkkFMA&destinationId=ChIJH3frsc5ZzpQRoU10aab2BOk

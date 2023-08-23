@@ -1,4 +1,4 @@
-import { Controller, Query } from '@nestjs/common';
+import { Controller, Get, Query } from '@nestjs/common';
 
 import { DirectionsService } from './directions.service';
 
@@ -6,6 +6,7 @@ import { DirectionsService } from './directions.service';
 export class DirectionsController {
   constructor(private directionsService: DirectionsService) {}
 
+  @Get()
   getDirections(
     @Query('originId') originId: string,
     @Query('destinationId') destinationId: string,
